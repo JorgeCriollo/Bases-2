@@ -20,6 +20,19 @@ public class Affiliate {
     private final Calendar memberSince;
     private Account[] accounts;
 
+    public Affiliate(int db_id, String id, byte[] picture, String name, String lastName, String email, Calendar birthday,
+                     Calendar memberSince) {
+        this.db_id = db_id;
+        this.id = id;
+        this.picture = new SerializableImage(picture);
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.birthday = birthday;
+        this.memberSince = memberSince;
+        accounts = null;
+    }
+
     public Affiliate(int db_id, String id, Image picture, String name, String lastName, String email, Calendar birthday,
                      Calendar memberSince) {
         this.db_id = db_id;

@@ -3,8 +3,6 @@ package Data.MainObjectData.AccountData;
 import Data.DB;
 import Data.Utils.StringUtils;
 
-import java.util.ArrayList;
-
 public class Account {
     private final long accountNumber;
     private final AccountType type;
@@ -31,10 +29,6 @@ public class Account {
 
     public double getBalance() {
         return balance;
-    }
-
-    public void transaction(int delta) {
-        balance += delta;
     }
 
     public AccountRegistry[] getRegistries() {

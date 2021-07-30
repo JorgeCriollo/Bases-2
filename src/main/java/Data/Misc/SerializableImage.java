@@ -14,6 +14,10 @@ public class SerializableImage implements Serializable {
     private static final long serialVersionUID = 15L;
     private byte[] img = null;
 
+    public SerializableImage(byte[] imageBytes) {
+        img = imageBytes;
+    }
+
     public SerializableImage(Image image) {
         if (image == null)
             img = null;

@@ -23,7 +23,7 @@ public class DB {
     public static boolean login(String user, char[] password) {
         try {
             //TODO Cambiar por affiliate = null
-            Affiliate affiliate = new Affiliate(1, "0704572098",ImageIO.read(DB.class.getClassLoader().getResource("test2.png")), "Max", "Samaniego",
+            Affiliate affiliate = new Affiliate(1, "0704572098", ImageIO.read(DB.class.getClassLoader().getResource("test2.png")), "Max", "Samaniego",
                     "max.samaniego@ucuenca.edu.ec", Calendar.getInstance(), Calendar.getInstance());
 
             //TODO obtener afiliado y comprobar contraseña en la base de datos aquí
